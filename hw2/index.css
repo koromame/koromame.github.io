@@ -44,7 +44,7 @@ a:hover{
 }
 hr{
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .boxA{
   position: relative;
@@ -191,18 +191,18 @@ h3{
   }
   .taitol{
     margin-left: auto;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 15px;
     padding-bottom: 20px;
     float: left;
   }
   .toppu li a {
-    display: bl
+    display: block;
     float: left;
     color: #3c3c3c;
     margin-left: 15px;
     margin-right: 15px;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-bottom: 20px;
   }
   hr{
