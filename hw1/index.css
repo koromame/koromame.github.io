@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
+}
+img {
+  max-width: 100%;
+}
+* {
+  margin:0;
+  padding:0;
+}
+a {
+  text-decoration: none;
+  color:#000;
+}
+ul,li {
+  list-style: none;
+}
+a:hover {
+  background-color: #eee;
+}
+/* サイト名 */
+.site h1 {
+  font-size:30px;
+}
+.box1 {
+  padding-top:8px;
+  padding-bottom:8px;
+}
+/* ナビゲーション */
+.box2 {
+  background-color: #7cbac1;
+}
+.menu li a {
+  display: block;
+  padding:15px;
+}
+.menu li a:hover {
+  background-color: #75dbe7;
+}
+
+.menu li {
+  float:left;
+}
+.menu ul:after {
+  content: "";
+  display: block;
+  clear:both;
+}
+/* 記事 */
+.box3 {
+  padding-top:40px;
+  padding-bottom:30px;
+}
+.kiji h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.kiji p {
+  margin-bottom:20px;
+}
+/* サイドメニュー */
+.box4 {
+  padding-top:40px;
+  padding-bottom:30px;
+}
+.sidemenu h3 {
+  margin-bottom:10px;
+  border-bottom: dotted 2px #dddddd;
+  color:#666666;
+  font-size:18px;
+}
+.sidemenu li a{
+  display: block;
+  padding:5px;
+}
+/* コピーライト */
+.box5 {
+  border-top: solid 1px #dddddd;
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+
+/* 599px以下 */
+@media (max-width:599px) {
+  .menu li a {
+    padding: 10px 3px;
+    font-size:11px;
+  }
+  .site h1 {
+    font-size:20px;
+  }
+  .kiji h2 {
+    font-size:26px;
+  }
+  .box1 {
+    padding-top:4px;
+    padding-bottom:4px;
+  }
+  .box3 {
+    padding-top:25px;
+  }
+}
+/* 600px以上 - 767px以下 */
+@media (min-width:600px) and (max-width:768px) {
+  .box4-1 {
+    float:left;
+    width:50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  .box4-2 {
+    float:left;
+    width:50%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  .box4:after {
+    content: "";
+    display: block;
+    clear:both;
+  }
+}
+/* 768px以上 */
+@media (min-width:768px) {
+  .box3 {
+    width:70%;
+    float:left;
+    padding-right:50px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+  .box4 {
+    width:30%;
+    float:left;
+  }
+  .boxA:after{
+    content: "";
+    display: block;
+    clear:both;
+  }
+}
+/* 1040px 以上 */
+@media (min-width:1040px) {
+  .box1,.box2,.boxA,.box5{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
